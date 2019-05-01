@@ -1,0 +1,31 @@
+[INFO ] 2019-04-29 21:58:57,965 method:com.mchange.v2.log.MLog.<clinit>(MLog.java:80)
+MLog clients using log4j logging.
+[INFO ] 2019-04-29 21:58:58,037 method:com.mchange.v2.c3p0.C3P0Registry.banner(C3P0Registry.java:204)
+Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+[INFO ] 2019-04-29 21:58:58,063 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2019-04-29 21:58:58,076 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2019-04-29 21:58:58,077 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.3 created.
+[INFO ] 2019-04-29 21:58:58,077 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2019-04-29 21:58:58,079 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2019-04-29 21:58:58,080 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546338064'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2019-04-29 21:58:58,080 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'quartz.properties' in the class resource path.
+[INFO ] 2019-04-29 21:58:58,080 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.3
+[INFO ] 2019-04-29 21:58:58,105 method:com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager(AbstractPoolBackedDataSource.java:462)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8q5z9yszl5c|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8q5z9yszl5c|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2019-04-29 21:58:58,819 method:org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:575)
+Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546338064 started.

@@ -1,0 +1,1214 @@
+2019-04-29 20:39:43  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 20:39:43  [ main:92 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 20:39:43  [ main:136 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[z8kfsxa2t5w97h7zt7zs|65ae6ba4] registered.
+2019-04-29 20:39:43  [ main:274 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-04-29 20:39:43  [ main:275 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-04-29 20:39:43  [ main:275 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-04-29 20:39:43  [ main:284 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@6615435c config: [start -> 3; min -> 1; max -> 5; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 50000; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-04-29 20:39:43  [ main:290 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t5w97h7zt7zs|65ae6ba4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t5w97h7zt7zs|65ae6ba4, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 20:39:43  [ main:291 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-04-29 20:39:43  [ main:292 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-04-29 20:39:43  [ main:292 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 0, unused: 0, excluded: 0]
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:803 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:804 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@667ccd8d.acquireResource() returning. 
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:804 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 1, unused: 1, excluded: 0]
+2019-04-29 20:39:44  [ main:804 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258)
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:804 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:835 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:835 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@667ccd8d.acquireResource() returning. 
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:835 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258)
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:836 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-04-29 20:39:44  [ main:845 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@54c47e1a ).size(): 1
+2019-04-29 20:39:44  [ main:845 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:851 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:852 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@667ccd8d.acquireResource() returning. 
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:852 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258)
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:852 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-04-29 20:39:44  [ main:867 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2019-04-29 20:39:44  [ main:872 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@54c47e1a ).size(): 2
+2019-04-29 20:39:44  [ main:872 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 2; checked out: 1; num connections: 1; num keys: 2
+2019-04-29 20:39:44  [ main:888 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 2; checked out: 0; num connections: 1; num keys: 2
+2019-04-29 20:39:44  [ main:889 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@54c47e1a ).size(): 3
+2019-04-29 20:39:44  [ main:889 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 3; checked out: 1; num connections: 1; num keys: 3
+2019-04-29 20:39:44  [ main:906 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 3; checked out: 0; num connections: 1; num keys: 3
+2019-04-29 20:39:44  [ main:907 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@54c47e1a ).size(): 4
+2019-04-29 20:39:44  [ main:907 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 1; num connections: 1; num keys: 4
+2019-04-29 20:39:44  [ main:923 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 0; num connections: 1; num keys: 4
+2019-04-29 20:39:44  [ main:923 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@54c47e1a ).size(): 5
+2019-04-29 20:39:44  [ main:923 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 1; num connections: 1; num keys: 5
+2019-04-29 20:39:44  [ main:939 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 0; num connections: 1; num keys: 5
+2019-04-29 20:39:44  [ main:939 ] - [ DEBUG ]  com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+2019-04-29 20:39:44  [ main:939 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 1; num connections: 1; num keys: 5
+2019-04-29 20:39:44  [ main:955 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 0; num connections: 1; num keys: 5
+2019-04-29 20:39:44  [ main:955 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@54c47e1a ).size(): 6
+2019-04-29 20:39:44  [ main:956 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 1; num connections: 1; num keys: 6
+2019-04-29 20:39:44  [ main:971 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 0; num connections: 1; num keys: 6
+2019-04-29 20:39:44  [ main:972 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@54c47e1a ).size(): 7
+2019-04-29 20:39:44  [ main:972 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 7; checked out: 1; num connections: 1; num keys: 7
+2019-04-29 20:39:44  [ main:988 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 7; checked out: 0; num connections: 1; num keys: 7
+2019-04-29 20:39:44  [ main:989 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@54c47e1a ).size(): 8
+2019-04-29 20:39:44  [ main:989 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 1; num connections: 1; num keys: 8
+2019-04-29 20:39:44  [ main:1004 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 0; num connections: 1; num keys: 8
+2019-04-29 20:39:44  [ main:1037 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 0; num connections: 1; num keys: 8
+2019-04-29 20:39:44  [ main:1037 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258)
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1038 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 0; num connections: 1; num keys: 8
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1038 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258] on CHECKIN.
+2019-04-29 20:39:44  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556541583397_MisfireHandler:1038 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258)
+2019-04-29 20:39:44  [ DistRmiScheduler_QuartzSchedulerThread:1038 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 3, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258)
+2019-04-29 20:39:44  [ DistRmiScheduler_QuartzSchedulerThread:1053 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@23823c4f ).size(): 1
+2019-04-29 20:39:44  [ DistRmiScheduler_QuartzSchedulerThread:1053 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 1; num connections: 2; num keys: 9
+2019-04-29 20:39:44  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556541583397_MisfireHandler:1054 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1e7b390 ).size(): 1
+2019-04-29 20:39:44  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556541583397_MisfireHandler:1054 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 2; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1055 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 2; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1055 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258] on CHECKIN has SUCCEEDED.
+2019-04-29 20:39:44  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556541583397_MisfireHandler:1069 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 1; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ DistRmiScheduler_QuartzSchedulerThread:1083 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556541583397_MisfireHandler:1099 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556541583397_MisfireHandler:1100 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258)
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1100 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1100 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@697e15e6] on CHECKIN.
+2019-04-29 20:39:44  [ DistRmiScheduler_QuartzSchedulerThread:1111 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ DistRmiScheduler_QuartzSchedulerThread:1111 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6615435c [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258)
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1111 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1111 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a483568] on CHECKIN.
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1115 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1115 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@697e15e6] on CHECKIN has SUCCEEDED.
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1140 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 3; num keys: 10
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1140 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4a483568] on CHECKIN has SUCCEEDED.
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1217 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main] interrupted. Shutting down.
+2019-04-29 20:39:44  [ main:1217 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[z8kfsxa2t5w97h7zt7zs|65ae6ba4] unregistered.
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1217 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main] interrupted. Shutting down.
+2019-04-29 20:39:44  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1217 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main] interrupted. Shutting down.
+2019-04-29 20:39:44  [ main:1217 ] - [ DEBUG ]  C3P0Registry mbean unregistered.
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1217 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@4a483568
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1218 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@4a483568
+2019-04-29 20:39:44  [ main:1218 ] - [ DEBUG ]  com.mchange.v2.c3p0.ComboPooledDataSource@65ae6ba4 has been closed. 
+java.lang.Exception: DEBUG STACK TRACE for PoolBackedDataSource.close().
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.close(AbstractPoolBackedDataSource.java:417)
+	at org.quartz.utils.PoolingConnectionProvider.shutdown(PoolingConnectionProvider.java:251)
+	at org.quartz.utils.DBConnectionManager.shutdown(DBConnectionManager.java:139)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.shutdown(JobStoreSupport.java:741)
+	at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:760)
+	at org.quartz.impl.StdScheduler.shutdown(StdScheduler.java:206)
+	at RemoteServer.run(RemoteServer.java:38)
+	at RemoteServer.main(RemoteServer.java:51)
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1218 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@4a483568 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1219 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@4a483568
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1219 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@4a483568
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1220 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@697e15e6
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1220 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@697e15e6
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1220 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@697e15e6 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1220 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@697e15e6
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1220 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@697e15e6
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1220 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1220 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1220 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1221 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258
+2019-04-29 20:39:44  [ Resource Destroyer in BasicResourcePool.close():1221 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@5df4258
+2019-04-29 20:44:00  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 20:44:00  [ main:66 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 20:44:00  [ main:79 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[z8kfsxa2t61rrg1ecq21n|3d012ddd] registered.
+2019-04-29 20:44:00  [ main:213 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-04-29 20:44:00  [ main:214 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-04-29 20:44:00  [ main:214 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-04-29 20:44:00  [ main:214 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d config: [start -> 3; min -> 1; max -> 5; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 50000; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-04-29 20:44:00  [ main:215 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t61rrg1ecq21n|3d012ddd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t61rrg1ecq21n|3d012ddd, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 20:44:00  [ main:215 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-04-29 20:44:00  [ main:215 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-04-29 20:44:00  [ main:216 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 0, unused: 0, excluded: 0]
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:744 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:745 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:745 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@399f62a1.acquireResource() returning. 
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:745 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@399f62a1.acquireResource() returning. 
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:746 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 1, unused: 1, excluded: 0]
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:747 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:748 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-04-29 20:44:01  [ main:748 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:748 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:752 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:752 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@399f62a1.acquireResource() returning. 
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:753 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:753 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-04-29 20:44:01  [ main:791 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 1
+2019-04-29 20:44:01  [ main:791 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2019-04-29 20:44:01  [ main:813 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2019-04-29 20:44:01  [ main:820 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 2
+2019-04-29 20:44:01  [ main:820 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 2; checked out: 1; num connections: 1; num keys: 2
+2019-04-29 20:44:01  [ main:839 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 2; checked out: 0; num connections: 1; num keys: 2
+2019-04-29 20:44:01  [ main:842 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 3
+2019-04-29 20:44:01  [ main:842 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 3; checked out: 1; num connections: 1; num keys: 3
+2019-04-29 20:44:01  [ main:858 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 3; checked out: 0; num connections: 1; num keys: 3
+2019-04-29 20:44:01  [ main:859 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 4
+2019-04-29 20:44:01  [ main:859 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 1; num connections: 1; num keys: 4
+2019-04-29 20:44:01  [ main:874 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 0; num connections: 1; num keys: 4
+2019-04-29 20:44:01  [ main:875 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 5
+2019-04-29 20:44:01  [ main:875 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 1; num connections: 1; num keys: 5
+2019-04-29 20:44:01  [ main:892 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 0; num connections: 1; num keys: 5
+2019-04-29 20:44:01  [ main:892 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 6
+2019-04-29 20:44:01  [ main:892 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 1; num connections: 1; num keys: 6
+2019-04-29 20:44:01  [ main:908 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 0; num connections: 1; num keys: 6
+2019-04-29 20:44:01  [ main:908 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 7
+2019-04-29 20:44:01  [ main:908 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 7; checked out: 1; num connections: 1; num keys: 7
+2019-04-29 20:44:01  [ main:925 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 7; checked out: 0; num connections: 1; num keys: 7
+2019-04-29 20:44:01  [ main:926 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 8
+2019-04-29 20:44:01  [ main:926 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 1; num connections: 1; num keys: 8
+2019-04-29 20:44:01  [ main:942 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 0; num connections: 1; num keys: 8
+2019-04-29 20:44:01  [ main:942 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 9
+2019-04-29 20:44:01  [ main:943 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 1; num connections: 1; num keys: 9
+2019-04-29 20:44:01  [ main:958 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 0; num connections: 1; num keys: 9
+2019-04-29 20:44:01  [ main:989 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 0; num connections: 1; num keys: 9
+2019-04-29 20:44:01  [ main:989 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:990 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 0; num connections: 1; num keys: 9
+2019-04-29 20:44:01  [ main:990 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:990 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5] on CHECKIN.
+2019-04-29 20:44:01  [ main:1006 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@3647a13f ).size(): 1
+2019-04-29 20:44:01  [ main:1006 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 1; num connections: 2; num keys: 10
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1007 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 1; num connections: 2; num keys: 10
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1007 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5] on CHECKIN has SUCCEEDED.
+2019-04-29 20:44:01  [ main:1022 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 2; num keys: 10
+2019-04-29 20:44:01  [ main:1023 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@3647a13f ).size(): 2
+2019-04-29 20:44:01  [ main:1023 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 11; checked out: 1; num connections: 2; num keys: 11
+2019-04-29 20:44:01  [ main:1040 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 11; checked out: 0; num connections: 2; num keys: 11
+2019-04-29 20:44:01  [ main:1041 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@3647a13f ).size(): 3
+2019-04-29 20:44:01  [ main:1042 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 12; checked out: 1; num connections: 2; num keys: 12
+2019-04-29 20:44:01  [ main:1059 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 12; checked out: 0; num connections: 2; num keys: 12
+2019-04-29 20:44:01  [ main:1059 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@3647a13f ).size(): 4
+2019-04-29 20:44:01  [ main:1060 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 1; num connections: 2; num keys: 13
+2019-04-29 20:44:01  [ main:1076 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 0; num connections: 2; num keys: 13
+2019-04-29 20:44:01  [ main:1076 ] - [ DEBUG ]  com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+2019-04-29 20:44:01  [ main:1076 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 1; num connections: 2; num keys: 13
+2019-04-29 20:44:01  [ main:1093 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 0; num connections: 2; num keys: 13
+2019-04-29 20:44:01  [ main:1094 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@3647a13f ).size(): 5
+2019-04-29 20:44:01  [ main:1094 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 1; num connections: 2; num keys: 14
+2019-04-29 20:44:01  [ main:1111 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 0; num connections: 2; num keys: 14
+2019-04-29 20:44:01  [ main:1112 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@3647a13f ).size(): 6
+2019-04-29 20:44:01  [ main:1112 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 1; num connections: 2; num keys: 15
+2019-04-29 20:44:01  [ main:1129 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+2019-04-29 20:44:01  [ main:1162 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+2019-04-29 20:44:01  [ main:1163 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1163 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1164 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@130e8473] on CHECKIN.
+2019-04-29 20:44:01  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1164 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ DistRmiScheduler_QuartzSchedulerThread:1165 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 3, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1181 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1181 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@130e8473] on CHECKIN has SUCCEEDED.
+2019-04-29 20:44:01  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1181 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@ef536a5 ).size(): 10
+2019-04-29 20:44:01  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1182 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 16; checked out: 1; num connections: 2; num keys: 16
+2019-04-29 20:44:01  [ DistRmiScheduler_QuartzSchedulerThread:1182 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@12bc8dda ).size(): 1
+2019-04-29 20:44:01  [ DistRmiScheduler_QuartzSchedulerThread:1183 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 2; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1200 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 1; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ DistRmiScheduler_QuartzSchedulerThread:1214 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1232 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1232 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1232 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1232 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5] on CHECKIN.
+2019-04-29 20:44:01  [ DistRmiScheduler_QuartzSchedulerThread:1243 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ DistRmiScheduler_QuartzSchedulerThread:1244 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@6d00a15d [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5)
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1244 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1244 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@75626574] on CHECKIN.
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1248 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1248 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5] on CHECKIN has SUCCEEDED.
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1273 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:44:01  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1274 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@75626574] on CHECKIN has SUCCEEDED.
+2019-04-29 20:44:02  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1614 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main] interrupted. Shutting down.
+2019-04-29 20:44:02  [ main:1614 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[z8kfsxa2t61rrg1ecq21n|3d012ddd] unregistered.
+2019-04-29 20:44:02  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1614 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main] interrupted. Shutting down.
+2019-04-29 20:44:02  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1614 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main] interrupted. Shutting down.
+2019-04-29 20:44:02  [ main:1615 ] - [ DEBUG ]  C3P0Registry mbean unregistered.
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1615 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@130e8473
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1616 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@130e8473
+2019-04-29 20:44:02  [ main:1616 ] - [ DEBUG ]  com.mchange.v2.c3p0.ComboPooledDataSource@3d012ddd has been closed. 
+java.lang.Exception: DEBUG STACK TRACE for PoolBackedDataSource.close().
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.close(AbstractPoolBackedDataSource.java:417)
+	at org.quartz.utils.PoolingConnectionProvider.shutdown(PoolingConnectionProvider.java:251)
+	at org.quartz.utils.DBConnectionManager.shutdown(DBConnectionManager.java:139)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.shutdown(JobStoreSupport.java:741)
+	at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:760)
+	at org.quartz.impl.StdScheduler.shutdown(StdScheduler.java:206)
+	at RemoteServer.run(RemoteServer.java:38)
+	at RemoteServer.main(RemoteServer.java:51)
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1617 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@130e8473 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1619 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@130e8473
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1619 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@130e8473
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1619 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@75626574
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1620 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@75626574
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1620 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@75626574 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1621 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@75626574
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1621 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@75626574
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1621 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1621 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1622 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1623 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5
+2019-04-29 20:44:02  [ Resource Destroyer in BasicResourcePool.close():1623 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@284a51d5
+2019-04-29 20:45:12  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 20:45:12  [ main:61 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 20:45:12  [ main:72 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[z8kfsxa2t63baw1tycaid|5e91993f] registered.
+2019-04-29 20:45:12  [ main:82 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 20:45:12  [ main:92 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 20:45:12  [ main:92 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 20:45:12  [ main:93 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 20:45:12  [ main:94 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 20:45:12  [ main:177 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 20:45:12  [ main:178 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 20:45:12  [ main:178 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 20:45:12  [ main:178 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 20:45:12  [ main:178 ] - [ WARN ]  ***** Deleting existing jobs/triggers *****
+2019-04-29 20:45:12  [ main:199 ] - [ DEBUG ]  incremented pending_acquires: 1
+2019-04-29 20:45:12  [ main:199 ] - [ DEBUG ]  incremented pending_acquires: 2
+2019-04-29 20:45:12  [ main:200 ] - [ DEBUG ]  incremented pending_acquires: 3
+2019-04-29 20:45:12  [ main:201 ] - [ DEBUG ]  com.mchange.v2.resourcepool.BasicResourcePool@4520ebad config: [start -> 3; min -> 1; max -> 5; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 50000; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2019-04-29 20:45:12  [ main:202 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t63baw1tycaid|5e91993f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t63baw1tycaid|5e91993f, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 20:45:12  [ main:202 ] - [ DEBUG ]  acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2019-04-29 20:45:12  [ main:202 ] - [ DEBUG ]  awaitAvailable(): [unknown]
+2019-04-29 20:45:12  [ main:202 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 0, unused: 0, excluded: 0]
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:695 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:695 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:695 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4b78caec.acquireResource() returning. 
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:695 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4b78caec.acquireResource() returning. 
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:696 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 1, unused: 1, excluded: 0]
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:697 ] - [ DEBUG ]  decremented pending_acquires: 2
+2019-04-29 20:45:13  [ main:697 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:697 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:698 ] - [ DEBUG ]  decremented pending_acquires: 1
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:702 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:702 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@4b78caec.acquireResource() returning. 
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:702 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:703 ] - [ DEBUG ]  decremented pending_acquires: 0
+2019-04-29 20:45:13  [ main:723 ] - [ DEBUG ]  Lock 'TRIGGER_ACCESS' is desired by: main
+2019-04-29 20:45:13  [ main:740 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 1
+2019-04-29 20:45:13  [ main:740 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2019-04-29 20:45:13  [ main:743 ] - [ DEBUG ]  Lock 'TRIGGER_ACCESS' is being obtained: main
+2019-04-29 20:45:13  [ main:764 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2019-04-29 20:45:13  [ main:765 ] - [ DEBUG ]  Lock 'TRIGGER_ACCESS' given to: main
+2019-04-29 20:45:13  [ main:770 ] - [ DEBUG ]  Adding TriggerPersistenceDelegate of type: org.quartz.impl.jdbcjobstore.SimpleTriggerPersistenceDelegate
+2019-04-29 20:45:13  [ main:771 ] - [ DEBUG ]  Adding TriggerPersistenceDelegate of type: org.quartz.impl.jdbcjobstore.CronTriggerPersistenceDelegate
+2019-04-29 20:45:13  [ main:772 ] - [ DEBUG ]  Adding TriggerPersistenceDelegate of type: org.quartz.impl.jdbcjobstore.CalendarIntervalTriggerPersistenceDelegate
+2019-04-29 20:45:13  [ main:774 ] - [ DEBUG ]  Adding TriggerPersistenceDelegate of type: org.quartz.impl.jdbcjobstore.DailyTimeIntervalTriggerPersistenceDelegate
+2019-04-29 20:45:13  [ main:774 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 2
+2019-04-29 20:45:13  [ main:775 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 2; checked out: 1; num connections: 1; num keys: 2
+2019-04-29 20:45:13  [ main:790 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 2; checked out: 0; num connections: 1; num keys: 2
+2019-04-29 20:45:13  [ main:790 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 3
+2019-04-29 20:45:13  [ main:791 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 3; checked out: 1; num connections: 1; num keys: 3
+2019-04-29 20:45:13  [ main:806 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 3; checked out: 0; num connections: 1; num keys: 3
+2019-04-29 20:45:13  [ main:807 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 4
+2019-04-29 20:45:13  [ main:807 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 1; num connections: 1; num keys: 4
+2019-04-29 20:45:13  [ main:822 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 4; checked out: 0; num connections: 1; num keys: 4
+2019-04-29 20:45:13  [ main:823 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 5
+2019-04-29 20:45:13  [ main:824 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 1; num connections: 1; num keys: 5
+2019-04-29 20:45:13  [ main:839 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 5; checked out: 0; num connections: 1; num keys: 5
+2019-04-29 20:45:13  [ main:841 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 6
+2019-04-29 20:45:13  [ main:841 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 1; num connections: 1; num keys: 6
+2019-04-29 20:45:13  [ main:857 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 6; checked out: 0; num connections: 1; num keys: 6
+2019-04-29 20:45:13  [ main:858 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 7
+2019-04-29 20:45:13  [ main:858 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 7; checked out: 1; num connections: 1; num keys: 7
+2019-04-29 20:45:13  [ main:873 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 7; checked out: 0; num connections: 1; num keys: 7
+2019-04-29 20:45:13  [ main:875 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 8
+2019-04-29 20:45:13  [ main:875 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 1; num connections: 1; num keys: 8
+2019-04-29 20:45:13  [ main:891 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 8; checked out: 0; num connections: 1; num keys: 8
+2019-04-29 20:45:13  [ main:891 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 9
+2019-04-29 20:45:13  [ main:892 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 1; num connections: 1; num keys: 9
+2019-04-29 20:45:13  [ main:906 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 0; num connections: 1; num keys: 9
+2019-04-29 20:45:13  [ main:921 ] - [ DEBUG ]  Lock 'TRIGGER_ACCESS' returned by: main
+2019-04-29 20:45:13  [ main:936 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 0; num connections: 1; num keys: 9
+2019-04-29 20:45:13  [ main:937 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:937 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 9; checked out: 0; num connections: 1; num keys: 9
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:937 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f] on CHECKIN.
+2019-04-29 20:45:13  [ main:937 ] - [ INFO ]  ------- Initialization Complete -----------
+2019-04-29 20:45:13  [ main:938 ] - [ INFO ]  ------- (Not Scheduling any Jobs - relying on a remote client to schedule jobs --
+2019-04-29 20:45:13  [ main:938 ] - [ INFO ]  ------- Starting Scheduler ----------------
+2019-04-29 20:45:13  [ main:938 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ main:953 ] - [ DEBUG ]  Lock 'STATE_ACCESS' is desired by: main
+2019-04-29 20:45:13  [ main:953 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@aa4d171 ).size(): 1
+2019-04-29 20:45:13  [ main:953 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 1; num connections: 2; num keys: 10
+2019-04-29 20:45:13  [ main:953 ] - [ DEBUG ]  Lock 'STATE_ACCESS' is being obtained: main
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:954 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 1; num connections: 2; num keys: 10
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:954 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f] on CHECKIN has SUCCEEDED.
+2019-04-29 20:45:13  [ main:968 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 10; checked out: 0; num connections: 2; num keys: 10
+2019-04-29 20:45:13  [ main:968 ] - [ DEBUG ]  Lock 'STATE_ACCESS' given to: main
+2019-04-29 20:45:13  [ main:969 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@aa4d171 ).size(): 2
+2019-04-29 20:45:13  [ main:969 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 11; checked out: 1; num connections: 2; num keys: 11
+2019-04-29 20:45:13  [ main:984 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 11; checked out: 0; num connections: 2; num keys: 11
+2019-04-29 20:45:13  [ main:985 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@aa4d171 ).size(): 3
+2019-04-29 20:45:13  [ main:985 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 12; checked out: 1; num connections: 2; num keys: 12
+2019-04-29 20:45:13  [ main:1000 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 12; checked out: 0; num connections: 2; num keys: 12
+2019-04-29 20:45:13  [ main:1000 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@aa4d171 ).size(): 4
+2019-04-29 20:45:13  [ main:1001 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 1; num connections: 2; num keys: 13
+2019-04-29 20:45:13  [ main:1015 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 0; num connections: 2; num keys: 13
+2019-04-29 20:45:13  [ main:1016 ] - [ DEBUG ]  Lock 'TRIGGER_ACCESS' is desired by: main
+2019-04-29 20:45:13  [ main:1016 ] - [ DEBUG ]  com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache ----> CACHE HIT
+2019-04-29 20:45:13  [ main:1016 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 1; num connections: 2; num keys: 13
+2019-04-29 20:45:13  [ main:1016 ] - [ DEBUG ]  Lock 'TRIGGER_ACCESS' is being obtained: main
+2019-04-29 20:45:13  [ main:1031 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 13; checked out: 0; num connections: 2; num keys: 13
+2019-04-29 20:45:13  [ main:1032 ] - [ DEBUG ]  Lock 'TRIGGER_ACCESS' given to: main
+2019-04-29 20:45:13  [ main:1032 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 20:45:13  [ main:1032 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 20:45:13  [ main:1033 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@aa4d171 ).size(): 5
+2019-04-29 20:45:13  [ main:1033 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 1; num connections: 2; num keys: 14
+2019-04-29 20:45:13  [ main:1049 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 14; checked out: 0; num connections: 2; num keys: 14
+2019-04-29 20:45:13  [ main:1050 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@aa4d171 ).size(): 6
+2019-04-29 20:45:13  [ main:1050 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 1; num connections: 2; num keys: 15
+2019-04-29 20:45:13  [ main:1065 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+2019-04-29 20:45:13  [ main:1066 ] - [ DEBUG ]  ClusterManager: ......Freed 0 acquired trigger(s).
+2019-04-29 20:45:13  [ main:1066 ] - [ DEBUG ]  ClusterManager: ......Deleted 0 complete triggers(s).
+2019-04-29 20:45:13  [ main:1066 ] - [ DEBUG ]  ClusterManager: ......Scheduled 0 recoverable job(s) for recovery.
+2019-04-29 20:45:13  [ main:1067 ] - [ DEBUG ]  ClusterManager: ......Cleaned-up 0 other failed job(s).
+2019-04-29 20:45:13  [ main:1083 ] - [ DEBUG ]  Lock 'TRIGGER_ACCESS' returned by: main
+2019-04-29 20:45:13  [ main:1083 ] - [ DEBUG ]  Lock 'STATE_ACCESS' returned by: main
+2019-04-29 20:45:13  [ main:1098 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+2019-04-29 20:45:13  [ main:1099 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ main:1099 ] - [ DEBUG ]  ClusterManager: Check-in complete.
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1099 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1100 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7ed4fb6b] on CHECKIN.
+2019-04-29 20:45:13  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1101 ] - [ DEBUG ]  MisfireHandler: scanning for misfires...
+2019-04-29 20:45:13  [ main:1100 ] - [ DEBUG ]  JobStore background threads started (as scheduler was started).
+2019-04-29 20:45:13  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1101 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ main:1102 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 20:45:13  [ main:1103 ] - [ INFO ]  ------- Started Scheduler -----------------
+2019-04-29 20:45:13  [ main:1104 ] - [ INFO ]  ------- Shutting Down ---------------------
+2019-04-29 20:45:13  [ DistRmiScheduler_QuartzSchedulerThread:1104 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 3, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ main:1104 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote shutting down.
+2019-04-29 20:45:13  [ main:1105 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote paused.
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1116 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 15; checked out: 0; num connections: 2; num keys: 15
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1116 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7ed4fb6b] on CHECKIN has SUCCEEDED.
+2019-04-29 20:45:13  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1119 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1adf2173 ).size(): 10
+2019-04-29 20:45:13  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1119 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 16; checked out: 1; num connections: 2; num keys: 16
+2019-04-29 20:45:13  [ DistRmiScheduler_QuartzSchedulerThread:1120 ] - [ DEBUG ]  cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@3ceda357 ).size(): 1
+2019-04-29 20:45:13  [ DistRmiScheduler_QuartzSchedulerThread:1121 ] - [ DEBUG ]  checkoutStatement: com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 2; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1138 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 1; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1139 ] - [ DEBUG ]  Found 0 triggers that missed their scheduled fire-time.
+2019-04-29 20:45:13  [ DistRmiScheduler_QuartzSchedulerThread:1153 ] - [ DEBUG ]  checkinStatement(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1168 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ QuartzScheduler_DistRmiScheduler-remote_MisfireHandler:1168 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1168 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1168 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f] on CHECKIN.
+2019-04-29 20:45:13  [ DistRmiScheduler_QuartzSchedulerThread:1181 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ DistRmiScheduler_QuartzSchedulerThread:1182 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@4520ebad [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f)
+2019-04-29 20:45:13  [ DistRmiScheduler_QuartzSchedulerThread:1182 ] - [ DEBUG ]  batch acquisition of 0 triggers
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1182 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ main:1182 ] - [ DEBUG ]  Shutting down threadpool...
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1182 ] - [ DEBUG ]  Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@32681692] on CHECKIN.
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1183 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1183 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f] on CHECKIN has SUCCEEDED.
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1211 ] - [ DEBUG ]  checkinAll(): com.mchange.v2.c3p0.stmt.PerConnectionMaxOnlyStatementCache stats -- total size: 17; checked out: 0; num connections: 3; num keys: 17
+2019-04-29 20:45:13  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1211 ] - [ DEBUG ]  Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@32681692] on CHECKIN has SUCCEEDED.
+2019-04-29 20:45:14  [ DistRmiScheduler_Worker-1:1585 ] - [ DEBUG ]  WorkerThread is shut down.
+2019-04-29 20:45:14  [ DistRmiScheduler_Worker-3:1585 ] - [ DEBUG ]  WorkerThread is shut down.
+2019-04-29 20:45:14  [ DistRmiScheduler_Worker-5:1585 ] - [ DEBUG ]  WorkerThread is shut down.
+2019-04-29 20:45:14  [ DistRmiScheduler_Worker-4:1585 ] - [ DEBUG ]  WorkerThread is shut down.
+2019-04-29 20:45:14  [ DistRmiScheduler_Worker-2:1585 ] - [ DEBUG ]  WorkerThread is shut down.
+2019-04-29 20:45:14  [ main:1588 ] - [ DEBUG ]  No executing jobs remaining, all threads stopped.
+2019-04-29 20:45:14  [ main:1588 ] - [ DEBUG ]  Shutdown of threadpool complete.
+2019-04-29 20:45:14  [ main:1593 ] - [ INFO ]  Scheduler un-bound from name 'DistRmiScheduler_$_remote' in RMI registry
+2019-04-29 20:45:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1610 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main] interrupted. Shutting down.
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1610 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@32681692
+2019-04-29 20:45:14  [ main:1610 ] - [ DEBUG ]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[z8kfsxa2t63baw1tycaid|5e91993f] unregistered.
+2019-04-29 20:45:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1610 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main] interrupted. Shutting down.
+2019-04-29 20:45:14  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1610 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main] interrupted. Shutting down.
+2019-04-29 20:45:14  [ main:1612 ] - [ DEBUG ]  C3P0Registry mbean unregistered.
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1611 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@32681692
+2019-04-29 20:45:14  [ main:1614 ] - [ DEBUG ]  com.mchange.v2.c3p0.ComboPooledDataSource@5e91993f has been closed. 
+java.lang.Exception: DEBUG STACK TRACE for PoolBackedDataSource.close().
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.close(AbstractPoolBackedDataSource.java:417)
+	at org.quartz.utils.PoolingConnectionProvider.shutdown(PoolingConnectionProvider.java:251)
+	at org.quartz.utils.DBConnectionManager.shutdown(DBConnectionManager.java:139)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.shutdown(JobStoreSupport.java:741)
+	at org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:760)
+	at org.quartz.impl.StdScheduler.shutdown(StdScheduler.java:206)
+	at RemoteServer.run(RemoteServer.java:38)
+	at RemoteServer.main(RemoteServer.java:51)
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1615 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@32681692 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:45:14  [ main:1616 ] - [ DEBUG ]  JobStore background threads shutdown.
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1617 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@32681692
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1617 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@32681692
+2019-04-29 20:45:14  [ main:1617 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote shutdown complete.
+2019-04-29 20:45:14  [ main:1618 ] - [ INFO ]  ------- Shutdown Complete -----------------
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1618 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f
+2019-04-29 20:45:14  [ main:1618 ] - [ INFO ]  Executed 0 jobs.
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1618 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1619 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1620 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1620 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@6f799b7f
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1620 ] - [ DEBUG ]  Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@7ed4fb6b
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1620 ] - [ DEBUG ]  Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@7ed4fb6b
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1620 ] - [ DEBUG ]  com.mchange.v2.c3p0.impl.NewPooledConnection@7ed4fb6b closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:491)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:191)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:989)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1174)
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1621 ] - [ DEBUG ]  Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@7ed4fb6b
+2019-04-29 20:45:14  [ Resource Destroyer in BasicResourcePool.close():1621 ] - [ DEBUG ]  Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@7ed4fb6b
+2019-04-29 20:46:09  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 20:46:09  [ main:60 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 20:46:09  [ main:85 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 20:46:09  [ main:94 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 20:46:09  [ main:94 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 20:46:09  [ main:95 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 20:46:09  [ main:97 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 20:46:09  [ main:174 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 20:46:09  [ main:175 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 20:46:09  [ main:175 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 20:46:09  [ main:175 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 20:46:09  [ main:175 ] - [ WARN ]  ***** Deleting existing jobs/triggers *****
+2019-04-29 20:46:09  [ main:200 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t64j8q1q8eazx|5e91993f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t64j8q1q8eazx|5e91993f, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 20:46:10  [ main:971 ] - [ INFO ]  ------- Initialization Complete -----------
+2019-04-29 20:46:10  [ main:979 ] - [ INFO ]  ------- (Not Scheduling any Jobs - relying on a remote client to schedule jobs --
+2019-04-29 20:46:10  [ main:980 ] - [ INFO ]  ------- Starting Scheduler ----------------
+2019-04-29 20:46:10  [ main:1091 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 20:46:10  [ main:1092 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 20:46:10  [ main:1160 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 20:46:10  [ main:1161 ] - [ INFO ]  ------- Started Scheduler -----------------
+2019-04-29 20:46:10  [ main:1162 ] - [ INFO ]  ------- Shutting Down ---------------------
+2019-04-29 20:46:10  [ main:1162 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote shutting down.
+2019-04-29 20:46:10  [ main:1162 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote paused.
+2019-04-29 20:46:11  [ main:1590 ] - [ INFO ]  Scheduler un-bound from name 'DistRmiScheduler_$_remote' in RMI registry
+2019-04-29 20:46:11  [ main:1606 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote shutdown complete.
+2019-04-29 20:46:11  [ main:1607 ] - [ INFO ]  ------- Shutdown Complete -----------------
+2019-04-29 20:46:11  [ main:1608 ] - [ INFO ]  Executed 0 jobs.
+2019-04-29 20:47:34  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 20:47:34  [ main:61 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 20:47:34  [ main:88 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 20:47:34  [ main:97 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 20:47:34  [ main:97 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 20:47:34  [ main:98 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 20:47:34  [ main:99 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 20:47:35  [ main:177 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 20:47:35  [ main:178 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 20:47:35  [ main:178 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 20:47:35  [ main:178 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 20:47:35  [ main:178 ] - [ WARN ]  ***** Deleting existing jobs/triggers *****
+2019-04-29 20:47:35  [ main:201 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t66d4s12ljo90|5e91993f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t66d4s12ljo90|5e91993f, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 20:47:35  [ main:951 ] - [ INFO ]  ------- Initialization Complete -----------
+2019-04-29 20:47:35  [ main:951 ] - [ INFO ]  ------- (Not Scheduling any Jobs - relying on a remote client to schedule jobs --
+2019-04-29 20:47:35  [ main:952 ] - [ INFO ]  ------- Starting Scheduler ----------------
+2019-04-29 20:47:35  [ main:1054 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 20:47:35  [ main:1055 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 20:47:36  [ main:1122 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 20:47:36  [ main:1122 ] - [ INFO ]  ------- Started Scheduler -----------------
+2019-04-29 20:47:36  [ main:1123 ] - [ INFO ]  ------- Shutting Down ---------------------
+2019-04-29 20:47:36  [ main:1123 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote shutting down.
+2019-04-29 20:47:36  [ main:1123 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote paused.
+2019-04-29 20:47:36  [ main:1602 ] - [ INFO ]  Scheduler un-bound from name 'DistRmiScheduler_$_remote' in RMI registry
+2019-04-29 20:47:36  [ main:1618 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote shutdown complete.
+2019-04-29 20:47:36  [ main:1619 ] - [ INFO ]  ------- Shutdown Complete -----------------
+2019-04-29 20:47:36  [ main:1619 ] - [ INFO ]  Executed 0 jobs.
+2019-04-29 20:54:04  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 20:54:04  [ main:62 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 20:54:04  [ main:85 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 20:54:04  [ main:95 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 20:54:04  [ main:95 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 20:54:04  [ main:96 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 20:54:04  [ main:97 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 20:54:04  [ main:171 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 20:54:04  [ main:172 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 20:54:04  [ main:172 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 20:54:04  [ main:172 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 20:54:04  [ main:197 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t6eppr7x6d1s|5e91993f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t6eppr7x6d1s|5e91993f, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 20:54:05  [ main:862 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 20:54:05  [ main:863 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 20:54:05  [ main:935 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 20:59:49  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 20:59:49  [ main:75 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 20:59:49  [ main:120 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 20:59:49  [ main:155 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 20:59:49  [ main:155 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 20:59:49  [ main:157 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 20:59:49  [ main:159 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 20:59:49  [ main:160 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556542789337'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 20:59:49  [ main:160 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 20:59:49  [ main:161 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 20:59:49  [ main:200 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t6m3qsql60wb|3b192d32, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t6m3qsql60wb|3b192d32, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 20:59:50  [ main:864 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 20:59:50  [ main:865 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 20:59:50  [ main:949 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556542789337 started.
+2019-04-29 21:00:19  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 21:00:19  [ main:37 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 21:00:19  [ main:92 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 21:07:41  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 21:07:41  [ main:36 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 21:07:41  [ main:92 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 21:07:41  [ main:114 ] - [ INFO ]  Using custom implementation for ThreadExecutor: DryRunThreadExecutor
+2019-04-29 21:10:26  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 21:10:53  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 21:10:53  [ main:39 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 21:10:53  [ main:102 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 21:10:53  [ main:125 ] - [ INFO ]  Using custom implementation for ThreadExecutor: DryRunThreadExecutor
+2019-04-29 21:10:53  [ main:134 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 21:10:53  [ main:134 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 21:10:53  [ main:135 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 21:10:53  [ main:136 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 21:10:53  [ main:211 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 21:10:53  [ main:213 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.ZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 21:10:53  [ main:213 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 21:10:53  [ main:213 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 21:10:53  [ main:233 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t70cdirdgs5u|379619aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t70cdirdgs5u|379619aa, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 21:10:54  [ main:892 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 21:10:54  [ main:892 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556542789337"'s failed in-progress jobs.
+2019-04-29 21:10:54  [ main:975 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 21:29:13  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 21:29:13  [ main:41 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 21:29:13  [ main:105 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 21:29:13  [ main:134 ] - [ INFO ]  Using custom implementation for ThreadExecutor: DryRunThreadExecutor
+2019-04-29 21:29:13  [ main:146 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 21:29:13  [ main:146 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 21:29:13  [ main:147 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 21:29:13  [ main:149 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 21:29:14  [ main:242 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 21:29:14  [ main:242 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.ZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 21:29:14  [ main:242 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 21:29:14  [ main:242 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 21:29:14  [ main:265 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t7nxbwzd8axm|379619aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t7nxbwzd8axm|379619aa, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 21:29:14  [ main:901 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 21:29:14  [ main:902 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 21:29:14  [ main:973 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 21:29:28  [ main:0 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 21:37:59  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 21:37:59  [ main:61 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 21:37:59  [ main:82 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 21:37:59  [ main:91 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 21:37:59  [ main:92 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 21:37:59  [ main:92 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 21:37:59  [ main:94 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 21:37:59  [ main:94 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556545079860'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 21:37:59  [ main:94 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'quartz.properties' in the class resource path.
+2019-04-29 21:37:59  [ main:95 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 21:37:59  [ main:115 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t7z75h9xljjl|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t7z75h9xljjl|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 21:38:00  [ main:813 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 21:38:00  [ main:814 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 21:38:00  [ main:905 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556545079860 started.
+2019-04-29 21:38:00  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556545079860_MisfireHandler:978 ] - [ INFO ]  Handling 1 trigger(s) that missed their scheduled fire-time.
+2019-04-29 21:38:01  [ DistRmiScheduler_Worker-1:1652 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:38:55  [ main:0 ] - [ ERROR ]  input job name and triger name
+2019-04-29 21:39:14  [ main:0 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 21:39:19  [ DistRmiScheduler_Worker-2:80047 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:26  [ main:0 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 21:45:36  [ DistRmiScheduler_Worker-3:457068 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:37  [ DistRmiScheduler_Worker-4:457445 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:37  [ DistRmiScheduler_Worker-5:457824 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:37  [ DistRmiScheduler_Worker-6:458206 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:38  [ DistRmiScheduler_Worker-7:458586 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:38  [ DistRmiScheduler_Worker-8:458966 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:39  [ DistRmiScheduler_Worker-9:459348 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:40  [ DistRmiScheduler_Worker-10:460343 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:42  [ DistRmiScheduler_Worker-11:462365 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:44  [ DistRmiScheduler_Worker-12:464347 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:45:46  [ DistRmiScheduler_Worker-1:466357 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:43  [ main:0 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 21:48:48  [ DistRmiScheduler_Worker-2:648945 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:49  [ DistRmiScheduler_Worker-3:649429 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:49  [ DistRmiScheduler_Worker-4:649932 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:50  [ DistRmiScheduler_Worker-5:650407 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:51  [ DistRmiScheduler_Worker-6:651825 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:53  [ DistRmiScheduler_Worker-7:653846 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:55  [ DistRmiScheduler_Worker-8:655839 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:57  [ DistRmiScheduler_Worker-9:657822 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:48:59  [ DistRmiScheduler_Worker-10:659834 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:49:01  [ DistRmiScheduler_Worker-11:661816 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:49:03  [ DistRmiScheduler_Worker-12:663833 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:42  [ main:0 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 21:51:46  [ DistRmiScheduler_Worker-1:827202 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:47  [ DistRmiScheduler_Worker-2:827681 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:47  [ DistRmiScheduler_Worker-3:828163 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:48  [ DistRmiScheduler_Worker-4:828648 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:50  [ DistRmiScheduler_Worker-5:830615 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:52  [ DistRmiScheduler_Worker-6:832616 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:54  [ DistRmiScheduler_Worker-7:834594 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:56  [ DistRmiScheduler_Worker-8:836612 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:51:58  [ DistRmiScheduler_Worker-9:838610 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:52:00  [ DistRmiScheduler_Worker-10:840593 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:52:02  [ DistRmiScheduler_Worker-11:842609 ] - [ INFO ]  mi-OptiPlex-70501556545079860 running this job
+2019-04-29 21:53:54  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 21:53:54  [ main:72 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 21:53:54  [ main:99 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 21:53:54  [ main:114 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 21:53:54  [ main:114 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 21:53:54  [ main:115 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 21:53:54  [ main:117 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 21:53:54  [ main:118 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546034467'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 21:53:54  [ main:118 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'quartz.properties' in the class resource path.
+2019-04-29 21:53:54  [ main:119 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 21:53:54  [ main:150 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8jnpxmmpc9p|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8jnpxmmpc9p|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 21:53:55  [ main:876 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546034467 started.
+2019-04-29 21:54:10  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546034467_ClusterManager:16039 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 21:54:10  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546034467_ClusterManager:16039 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556545079860"'s failed in-progress jobs.
+2019-04-29 21:57:38  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 21:57:38  [ main:40 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 21:57:38  [ main:110 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 21:57:38  [ main:132 ] - [ INFO ]  Using custom implementation for ThreadExecutor: DryRunThreadExecutor
+2019-04-29 21:57:38  [ main:141 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 21:57:38  [ main:142 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 21:57:38  [ main:142 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 21:57:38  [ main:144 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 21:57:38  [ main:205 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 21:57:38  [ main:206 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.ZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 21:57:38  [ main:206 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 21:57:38  [ main:206 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 21:57:38  [ main:234 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8ogs8u42hg5|379619aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8ogs8u42hg5|379619aa, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 21:57:39  [ main:867 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 21:57:56  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546034467_ClusterManager:242623 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 21:57:56  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546034467_ClusterManager:242624 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 21:58:57  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 21:58:58  [ main:72 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 21:58:58  [ main:98 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 21:58:58  [ main:111 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 21:58:58  [ main:112 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 21:58:58  [ main:112 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 21:58:58  [ main:114 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 21:58:58  [ main:115 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546338064'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 21:58:58  [ main:115 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'quartz.properties' in the class resource path.
+2019-04-29 21:58:58  [ main:115 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 21:58:58  [ main:140 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8q5z9yszl5c|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8q5z9yszl5c|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 21:58:58  [ main:854 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546338064 started.
+2019-04-29 22:00:35  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:00:35  [ main:70 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:00:35  [ main:97 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:00:35  [ main:110 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:00:35  [ main:110 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:00:35  [ main:112 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:00:35  [ main:115 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:00:35  [ main:116 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546435873'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:00:35  [ main:116 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'quartz.properties' in the class resource path.
+2019-04-29 22:00:35  [ main:116 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:00:35  [ main:136 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8s9g2ub5hc2|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8s9g2ub5hc2|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:00:36  [ main:834 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546435873 started.
+2019-04-29 22:00:50  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546034467_ClusterManager:416124 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:00:50  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546034467_ClusterManager:416125 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556546338064"'s failed in-progress jobs.
+2019-04-29 22:01:37  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:01:37  [ main:58 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:01:37  [ main:84 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:01:37  [ main:97 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:01:37  [ main:97 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:01:37  [ main:98 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:01:37  [ main:100 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:01:37  [ main:101 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546497552'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:01:37  [ main:101 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:01:37  [ main:101 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:01:37  [ main:122 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8tl1r1no8tbm|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8tl1r1no8tbm|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:01:38  [ main:853 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546497552 started.
+2019-04-29 22:02:37  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:02:37  [ main:58 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:02:37  [ main:79 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:02:37  [ main:89 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:02:37  [ main:90 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:02:37  [ main:91 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:02:37  [ main:92 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:02:37  [ main:93 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546557552'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:02:37  [ main:94 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:02:37  [ main:94 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:02:37  [ main:118 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8uvcjw07zwc|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8uvcjw07zwc|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:02:38  [ main:825 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546557552 started.
+2019-04-29 22:03:34  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:03:34  [ main:57 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:03:34  [ main:78 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:03:34  [ main:89 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:03:34  [ main:89 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:03:34  [ main:90 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:03:34  [ main:91 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:03:34  [ main:92 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546614742'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:03:34  [ main:92 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:03:34  [ main:92 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:03:34  [ main:114 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8w3h69dhb45|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8w3h69dhb45|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:03:35  [ main:839 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546614742 started.
+2019-04-29 22:03:51  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 22:03:51  [ main:34 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:03:51  [ main:91 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:03:51  [ main:115 ] - [ INFO ]  Using custom implementation for ThreadExecutor: DryRunThreadExecutor
+2019-04-29 22:03:51  [ main:129 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:03:51  [ main:129 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:03:51  [ main:130 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:03:51  [ main:131 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:03:51  [ main:191 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 22:03:51  [ main:192 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.ZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:03:51  [ main:192 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 22:03:51  [ main:192 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:03:51  [ main:214 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8wg4g1k8al7a|379619aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8wg4g1k8al7a|379619aa, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:03:51  [ main:928 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 22:04:07  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546435873_ClusterManager:212184 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:04:07  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546435873_ClusterManager:212184 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 22:04:08  [ main:0 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 22:04:19  [ DistRmiScheduler_Worker-1:161746 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:19  [ DistRmiScheduler_Worker-2:162146 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:20  [ DistRmiScheduler_Worker-3:162549 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:20  [ DistRmiScheduler_Worker-4:162946 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:20  [ DistRmiScheduler_Worker-5:163329 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:21  [ DistRmiScheduler_Worker-6:163710 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:21  [ DistRmiScheduler_Worker-7:164106 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:22  [ DistRmiScheduler_Worker-8:164809 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:24  [ DistRmiScheduler_Worker-9:166928 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:26  [ DistRmiScheduler_Worker-10:168926 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:04:28  [ DistRmiScheduler_Worker-11:170931 ] - [ INFO ]  mi-OptiPlex-70501556546497552 running this job
+2019-04-29 22:05:07  [ main:0 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 22:05:14  [ DistRmiScheduler_Worker-1:680030 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:14  [ DistRmiScheduler_Worker-2:680530 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:15  [ DistRmiScheduler_Worker-3:681032 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:15  [ DistRmiScheduler_Worker-4:681532 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:16  [ DistRmiScheduler_Worker-5:682031 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:17  [ DistRmiScheduler_Worker-6:683488 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:19  [ DistRmiScheduler_Worker-7:685462 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:21  [ DistRmiScheduler_Worker-8:687476 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:23  [ DistRmiScheduler_Worker-9:689445 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:25  [ DistRmiScheduler_Worker-10:691453 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:05:27  [ DistRmiScheduler_Worker-11:693473 ] - [ INFO ]  mi-OptiPlex-70501556546034467 running this job
+2019-04-29 22:06:20  [ main:1 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 22:06:23  [ DistRmiScheduler_Worker-1:347511 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:23  [ DistRmiScheduler_Worker-2:348006 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:24  [ DistRmiScheduler_Worker-3:348989 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:26  [ DistRmiScheduler_Worker-4:350971 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:28  [ DistRmiScheduler_Worker-5:352991 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:30  [ DistRmiScheduler_Worker-6:354976 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:32  [ DistRmiScheduler_Worker-7:356970 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:34  [ DistRmiScheduler_Worker-8:358994 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:36  [ DistRmiScheduler_Worker-9:360971 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:38  [ DistRmiScheduler_Worker-10:362966 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:06:40  [ DistRmiScheduler_Worker-11:364966 ] - [ INFO ]  mi-OptiPlex-70501556546435873 running this job
+2019-04-29 22:07:39  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:07:39  [ main:61 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:07:39  [ main:86 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:07:39  [ main:99 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:07:39  [ main:99 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:07:39  [ main:100 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:07:39  [ main:102 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:07:39  [ main:102 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546859875'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:07:39  [ main:103 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:07:39  [ main:103 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:07:39  [ main:123 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t91cm752y3lu|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t91cm752y3lu|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:07:40  [ main:893 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546859875 started.
+2019-04-29 22:07:48  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546859875_ClusterManager:8521 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:07:48  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556546859875_ClusterManager:8522 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556546497552"'s failed in-progress jobs.
+2019-04-29 22:14:49  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:14:49  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:14:49  [ main:87 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:14:49  [ main:93 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:14:49  [ main:122 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:14:49  [ main:126 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:14:49  [ main:135 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:14:49  [ main:135 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:14:49  [ main:137 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:14:49  [ main:140 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:14:49  [ main:142 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556547289258'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:14:49  [ main:143 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'quartz.properties' in the class resource path.
+2019-04-29 22:14:49  [ main:143 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:14:49  [ main:147 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:14:49  [ main:147 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:14:49  [ main:148 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:14:49  [ main:150 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:14:49  [ main:151 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556547289267'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:14:49  [ main:151 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'quartz.properties' in the class resource path.
+2019-04-29 22:14:49  [ main:151 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:14:49  [ main:181 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9ajwr1uavi10|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9ajwr1uavi10|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:14:49  [ main:183 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9ajx316qlevh|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9ajx316qlevh|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:14:50  [ main:1175 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556547289258 started.
+2019-04-29 22:14:50  [ main:1274 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556547289267 started.
+2019-04-29 22:14:57  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547289258_ClusterManager:8807 ] - [ INFO ]  ClusterManager: detected 2 failed or restarted instances.
+2019-04-29 22:14:57  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547289258_ClusterManager:8807 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556546435873"'s failed in-progress jobs.
+2019-04-29 22:14:58  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547289258_ClusterManager:8900 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556546557552"'s failed in-progress jobs.
+2019-04-29 22:15:05  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547289258_ClusterManager:16354 ] - [ INFO ]  ClusterManager: detected 3 failed or restarted instances.
+2019-04-29 22:15:05  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547289258_ClusterManager:16355 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556546034467"'s failed in-progress jobs.
+2019-04-29 22:15:05  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547289258_ClusterManager:16451 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556546614742"'s failed in-progress jobs.
+2019-04-29 22:15:05  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547289258_ClusterManager:16544 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556546859875"'s failed in-progress jobs.
+2019-04-29 22:19:57  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:19:57  [ main:90 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:19:57  [ main:147 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:19:57  [ main:175 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:19:57  [ main:175 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:19:57  [ main:177 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:19:57  [ main:184 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:19:57  [ main:190 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556547597751'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:19:57  [ main:191 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:19:57  [ main:192 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:19:57  [ main:331 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9h5x51enmq5o|3b192d32, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9h5x51enmq5o|3b192d32, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:19:58  [ main:1041 ] - [ INFO ]  ClusterManager: detected 2 failed or restarted instances.
+2019-04-29 22:19:58  [ main:1041 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556547289258"'s failed in-progress jobs.
+2019-04-29 22:19:58  [ main:1088 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556547289267"'s failed in-progress jobs.
+2019-04-29 22:19:58  [ main:1169 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556547597751 started.
+2019-04-29 22:22:10  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:22:10  [ main:60 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:22:10  [ main:85 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:22:10  [ main:98 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:22:10  [ main:99 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:22:10  [ main:100 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:22:10  [ main:102 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:22:10  [ main:103 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556547730552'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:22:10  [ main:103 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:22:10  [ main:103 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:22:10  [ main:128 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9k0fp5i1ex3|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9k0fp5i1ex3|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:22:11  [ main:820 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556547730552 started.
+2019-04-29 22:22:26  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:22:26  [ main:60 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:22:26  [ main:81 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:22:26  [ main:92 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:22:26  [ main:92 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:22:26  [ main:93 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:22:26  [ main:95 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:22:26  [ main:95 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556547746500'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:22:26  [ main:95 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:22:26  [ main:95 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:22:26  [ main:119 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9kcqs10s3kdx|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9kcqs10s3kdx|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:22:27  [ main:797 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556547746500 started.
+2019-04-29 22:22:34  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:22:34  [ main:59 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:22:34  [ main:83 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:22:34  [ main:98 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:22:34  [ main:98 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:22:34  [ main:99 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:22:34  [ main:101 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:22:34  [ main:101 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556547754212'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:22:34  [ main:101 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:22:34  [ main:101 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:22:34  [ main:124 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9kioz4xs97j|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9kioz4xs97j|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:22:34  [ main:832 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556547754212 started.
+2019-04-29 22:27:04  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:27:04  [ main:108 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:27:04  [ main:162 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:27:04  [ main:206 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:27:04  [ main:206 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:27:04  [ main:208 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:27:04  [ main:212 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:27:04  [ main:214 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556548024415'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:27:04  [ main:215 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:27:04  [ main:215 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:27:04  [ main:285 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9qb4l3r4u7|3b192d32, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9qb4l3r4u7|3b192d32, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:27:05  [ main:986 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556548024415 started.
+2019-04-29 22:27:20  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556548024415_ClusterManager:16161 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:27:20  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556548024415_ClusterManager:16161 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556547597751"'s failed in-progress jobs.
+2019-04-29 22:27:50  [ main:0 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:27:50  [ main:114 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:27:50  [ main:151 ] - [ INFO ]  Using default implementation for ThreadExecutor
+2019-04-29 22:27:50  [ main:176 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:27:50  [ main:177 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:27:50  [ main:178 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:27:50  [ main:181 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:27:50  [ main:181 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556548070638'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:27:50  [ main:182 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2019-04-29 22:27:50  [ main:182 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:27:50  [ main:213 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9ratak501d4|3b192d32, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9ratak501d4|3b192d32, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:27:51  [ main:913 ] - [ INFO ]  Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556548070638 started.
+2019-04-29 22:27:58  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547730552_ClusterManager:347989 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:27:58  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547730552_ClusterManager:347990 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556548024415"'s failed in-progress jobs.
+2019-04-29 22:28:06  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547746500_ClusterManager:340535 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:28:06  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547746500_ClusterManager:340536 ] - [ INFO ]  ClusterManager: Scanning for instance "mi-OptiPlex-70501556548070638"'s failed in-progress jobs.
+2019-04-29 22:28:19  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 22:28:19  [ main:40 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:28:19  [ main:103 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:28:19  [ main:125 ] - [ INFO ]  Using custom implementation for ThreadExecutor: DryRunThreadExecutor
+2019-04-29 22:28:19  [ main:133 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:28:19  [ main:134 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:28:19  [ main:134 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:28:19  [ main:136 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:28:19  [ main:196 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 22:28:19  [ main:196 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.ZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:28:19  [ main:196 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 22:28:19  [ main:197 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:28:19  [ main:219 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t9rwxi189flfk|379619aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t9rwxi189flfk|379619aa, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:28:20  [ main:892 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 22:28:36  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547730552_ClusterManager:385731 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:28:36  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547730552_ClusterManager:385731 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 22:28:58  [ main:1 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 22:29:00  [ DistRmiScheduler_Worker-1:394183 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:01  [ DistRmiScheduler_Worker-2:394675 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:02  [ DistRmiScheduler_Worker-3:396415 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:04  [ DistRmiScheduler_Worker-4:398404 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:06  [ DistRmiScheduler_Worker-5:400431 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:08  [ DistRmiScheduler_Worker-6:402401 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:10  [ DistRmiScheduler_Worker-7:404424 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:12  [ DistRmiScheduler_Worker-8:406412 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:14  [ DistRmiScheduler_Worker-9:408393 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:16  [ DistRmiScheduler_Worker-10:410425 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:29:18  [ DistRmiScheduler_Worker-11:412406 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:31:02  [ main:0 ] - [ INFO ]  Remote job scheduled.
+2019-04-29 22:31:03  [ DistRmiScheduler_Worker-1:509375 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:04  [ DistRmiScheduler_Worker-2:510370 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:06  [ DistRmiScheduler_Worker-3:512359 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:08  [ DistRmiScheduler_Worker-4:514369 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:10  [ DistRmiScheduler_Worker-5:516366 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:12  [ DistRmiScheduler_Worker-6:518382 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:14  [ DistRmiScheduler_Worker-7:520375 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:16  [ DistRmiScheduler_Worker-8:522370 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:18  [ DistRmiScheduler_Worker-9:524371 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:20  [ DistRmiScheduler_Worker-10:526370 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:31:22  [ DistRmiScheduler_Worker-11:528370 ] - [ INFO ]  mi-OptiPlex-70501556547754212 running this job
+2019-04-29 22:41:27  [ main:0 ] - [ WARN ]  deleting all existing jobs/triggers
+2019-04-29 22:41:27  [ main:37 ] - [ INFO ]  MLog clients using log4j logging.
+2019-04-29 22:41:27  [ main:92 ] - [ INFO ]  Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+2019-04-29 22:41:27  [ main:115 ] - [ INFO ]  Using custom implementation for ThreadExecutor: DryRunThreadExecutor
+2019-04-29 22:41:27  [ main:126 ] - [ INFO ]  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-29 22:41:27  [ main:127 ] - [ INFO ]  Quartz Scheduler v.2.2.3 created.
+2019-04-29 22:41:27  [ main:127 ] - [ INFO ]  Using db table-based data access locking (synchronization).
+2019-04-29 22:41:27  [ main:130 ] - [ INFO ]  JobStoreTX initialized.
+2019-04-29 22:41:27  [ main:204 ] - [ INFO ]  Scheduler bound to RMI registry under name 'DistRmiScheduler_$_remote'
+2019-04-29 22:41:27  [ main:205 ] - [ INFO ]  Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'remote'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - access via RMI.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.ZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+2019-04-29 22:41:27  [ main:205 ] - [ INFO ]  Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'remote.properties' in the class resource path.
+2019-04-29 22:41:27  [ main:205 ] - [ INFO ]  Quartz scheduler version: 2.2.3
+2019-04-29 22:41:27  [ main:230 ] - [ INFO ]  Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2ta8sxq1ce5cj5|379619aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2ta8sxq1ce5cj5|379619aa, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-04-29 22:41:28  [ main:945 ] - [ INFO ]  Scheduler DistRmiScheduler_$_remote started.
+2019-04-29 22:41:48  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547730552_ClusterManager:1178212 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:41:48  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547730552_ClusterManager:1178213 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 22:43:26  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547730552_ClusterManager:1276348 ] - [ INFO ]  ClusterManager: detected 1 failed or restarted instances.
+2019-04-29 22:43:26  [ QuartzScheduler_DistRmiScheduler-mi-OptiPlex-70501556547730552_ClusterManager:1276349 ] - [ INFO ]  ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+2019-04-29 22:44:27  [ DistRmiScheduler_Worker-12:1321481 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:28  [ DistRmiScheduler_Worker-1:1321961 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:29  [ DistRmiScheduler_Worker-2:1323336 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:31  [ DistRmiScheduler_Worker-3:1325338 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:33  [ DistRmiScheduler_Worker-4:1327346 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:35  [ DistRmiScheduler_Worker-5:1329334 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:37  [ DistRmiScheduler_Worker-6:1331338 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:39  [ DistRmiScheduler_Worker-7:1333348 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:41  [ DistRmiScheduler_Worker-8:1335341 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:43  [ DistRmiScheduler_Worker-9:1337340 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job
+2019-04-29 22:44:45  [ DistRmiScheduler_Worker-10:1339370 ] - [ INFO ]  mi-OptiPlex-70501556547746500 running this job

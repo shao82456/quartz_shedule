@@ -1,0 +1,441 @@
+[INFO ] 2019-04-29 22:00:35,775 method:com.mchange.v2.log.MLog.<clinit>(MLog.java:80)
+MLog clients using log4j logging.
+[INFO ] 2019-04-29 22:00:35,845 method:com.mchange.v2.c3p0.C3P0Registry.banner(C3P0Registry.java:204)
+Initializing c3p0-0.9.1.1 [built 15-March-2007 01:32:31; debug? true; trace: 10]
+[INFO ] 2019-04-29 22:00:35,872 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2019-04-29 22:00:35,885 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2019-04-29 22:00:35,885 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.3 created.
+[INFO ] 2019-04-29 22:00:35,887 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2019-04-29 22:00:35,890 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2019-04-29 22:00:35,891 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.3) 'DistRmiScheduler' with instanceId 'mi-OptiPlex-70501556546435873'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 12 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2019-04-29 22:00:35,891 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'DistRmiScheduler' initialized from specified file: 'quartz.properties' in the class resource path.
+[INFO ] 2019-04-29 22:00:35,891 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.3
+[INFO ] 2019-04-29 22:00:35,911 method:com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager(AbstractPoolBackedDataSource.java:462)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsxa2t8s9g2ub5hc2|123a439b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxa2t8s9g2ub5hc2|123a439b, idleConnectionTestPeriod -> 50, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://xn:3306/schedule, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 120, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 0, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2019-04-29 22:00:36,609 method:org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:575)
+Scheduler DistRmiScheduler_$_mi-OptiPlex-70501556546435873 started.
+[INFO ] 2019-04-29 22:04:07,959 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.logWarnIfNonZero(JobStoreSupport.java:3583)
+ClusterManager: detected 1 failed or restarted instances.
+[INFO ] 2019-04-29 22:04:07,959 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterRecover(JobStoreSupport.java:3442)
+ClusterManager: Scanning for instance "remote"'s failed in-progress jobs.
+[INFO ] 2019-04-29 22:06:23,286 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:23,781 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:24,764 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:26,746 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:28,766 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:30,751 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:32,745 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:34,769 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:36,746 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:38,741 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:06:40,741 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546435873 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+b.execute(Client.java:40)
+mi-OptiPlex-70501556546034467 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:05:25,820 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546034467 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+[INFO ] 2019-04-29 22:05:27,840 method:Client$CommandJob.execute(Client.java:40)
+mi-OptiPlex-70501556546034467 running this job
+bin
+boot
+cdrom
+copyright
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
