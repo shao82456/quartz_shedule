@@ -13,4 +13,8 @@ QUARTZ_PROPS2="-Dorg.quartz.properties=worker.properties"
 #$JAVA -cp "jars/*" $QUARTZ_PROPS2 shao.ClusterServer >$workhome/workerlog/server3.log 2>&1
 
 #启动worker
-$JAVA -cp "jars/*" $QUARTZ_PROPS2 ClusterServer
+$JAVA -cp "jars/*" $QUARTZ_PROPS2 shao.ClusterServer
+
+
+#QUARTZ_PROPS2="-Dorg.quartz.properties=worker.properties"
+#java -cp "jars/*" $QUARTZ_PROPS2 shao.ClusterServer
